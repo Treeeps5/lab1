@@ -1,22 +1,72 @@
 body {
-	background-color: aqua;
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	background: linear-gradient(to right, #ff7e5f, #feb47b, #6a11cb);
 }
 
 header {
-	background-color: #4CAF50;
+	background-color: lightskyblue;
 	color: white;
 	padding: 10px 20px;
 	text-align: center;
 }
 
+
+
 nav ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.p1 {
+	text-align: center;
+}
+
+.i1 {
+	margin: 0px;
+	display: inline-block;
+}
+
+
+.i2 {
+	position: absolute;
+	left: 175px;
+	top: 650px;
+}
+
+.i3 {
+	position: absolute;
+	left: 140px;
+	top: 1100px;
+}
+
+.t2 {
+	margin-bottom: 100px;
+	margin-left: 700px;
+	font-size: 20px;
+	line-height: 2;
+}
+
+.un1 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 22px;
 }
 
 li {
@@ -27,13 +77,15 @@ li {
 	border-radius: 8px;
 	font-size: 18px;
 	color: black;
-	text-align: left;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: 0 4px 10px rgba(1, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 1s ease;
 }
 
 main {
 	padding: 20px;
+	flex: 1;
 }
 
 footer {
@@ -41,6 +93,7 @@ footer {
 	background: #333;
 	color: white;
 	padding: 10px 0;
+
 }
 
 img {
@@ -53,4 +106,22 @@ img {
 		flex-direction: column;
 		align-items: center;
 	}
+}
+
+nav ul li a:hover {
+	background-color: lightskyblue;
+	color: white;
+	border-radius: 4px;
+}
+
+
+h1:hover {
+	color: aquamarine;
+}
+
+nav ul li a.active {
+	background-color: lightskyblue;
+	color: white;
+	border-radius: 4px;
+	font-weight: bold;
 }
